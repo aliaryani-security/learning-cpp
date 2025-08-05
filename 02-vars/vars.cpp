@@ -25,7 +25,17 @@ int main ()
     int a, b, c;
     a = b = c = 5;
     cout << a * b * c;
-    
-    
+
+    // constants
+    // used when you don't want a var to be changable
+    const int const_num = 17;
+    // const_num = 18; //let's see what happens 😂
+    //! vars.cpp: In function ‘int main()’:
+    //! vars.cpp:32:15: error: assignment of read-only variable ‘const_num’
+    //! 32 |     const_num = 18; //let's see what happens 😂
+    //!    |     ~~~~~~~~~~^~~~
+    //also, you MUST assign a value to a constant
+
+
     return 0; 
 }
