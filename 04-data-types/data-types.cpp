@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <string> //it's better be included for string type
 using namespace std;
 
 int main () {
@@ -10,5 +10,10 @@ int main () {
     bool my_boolean = true;
     string my_text = "C++ ist wunderbar!";
     cout << my_num << my_float << my_double << my_letter << my_boolean << my_text << endl;
+    
+    // when assigning a value, you can use auto to ask the compiler the type for you:
+    auto x {73.4};
+    cout << x;
+    
     return 0;
 }
