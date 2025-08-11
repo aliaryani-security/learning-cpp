@@ -15,6 +15,11 @@ int main() {
     string last = "Aryani";
     string full = first.append(last);
     cout << "\n" << full;
+
+    // length
+    string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    cout << "the length of this string is: " << alphabet.length() << endl;
+    // you can also use alphabet.size() and it will do the same thing for you.
     return 0;
 
 }
