@@ -9,6 +9,12 @@ int main() {
     string last_name = "Doe";
     string full_name = first_name + " " + last_name;
     cout << greetings << full_name;
+
+    // append
+    string first = "Ali ";
+    string last = "Aryani";
+    string full = first.append(last);
+    cout << "\n" << full;
     return 0;
 
 }
