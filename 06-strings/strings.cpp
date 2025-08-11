@@ -38,6 +38,12 @@ int main() {
     cout << "Enter your username: ";
     getline(cin, username);
     cout << "You are: " << username << endl;
+
+    // C-Style strings
+    // in C we do not have the string type
+    // instead, we need to use an array of char type
+    char password[] = "Passwd";
+    // just know it, don't have to use it almost ever!
     return 0;
 
 }
