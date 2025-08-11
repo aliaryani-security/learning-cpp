@@ -29,6 +29,15 @@ int main() {
     // see also:
     my_hello[0] = 'J';
     cout << my_hello << endl;
+
+    // string input:
+    // we can use cin, but it will take only the first word entered
+    // if you type John Doe, you will only get John from cin !
+    // so we will use getline() instead:
+    string username;
+    cout << "Enter your username: ";
+    getline(cin, username);
+    cout << "You are: " << username << endl;
     return 0;
 
 }
