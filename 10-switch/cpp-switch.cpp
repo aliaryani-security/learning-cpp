@@ -26,7 +26,7 @@ int main () {
 		case 7:
 		    cout << "Friday" << endl;
 		    break;
-		default:
+		default: // will execute if none of the above happens
 		    cout << "You got out of the matrix!";
 	}
 	
