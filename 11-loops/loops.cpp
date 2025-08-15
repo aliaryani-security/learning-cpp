@@ -9,5 +9,15 @@ int main () {
 		++i;
 	}
 	
+	// do while
+	// the block of code will be
+	// executed once before checking
+	// the condition
+	int j {0};
+	do {
+		cout << j << endl;
+		++j;
+	} while (j < 10);
+	
 	return 0;
 }
