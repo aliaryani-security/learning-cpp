@@ -18,6 +18,15 @@ int main () {
 		cout << j << endl;
 		++j;
 	} while (j < 10);
+
+	// for loop
+	// for has three statements:
+	// 1: is executed once before the block starts being run
+	// 2: condition for executing the code block
+	// 3: is executed every time that code block is executed
+	for (int i = 0; i < 10; ++i) {
+		cout << i << endl;
+	}
 	
 	return 0;
 }
