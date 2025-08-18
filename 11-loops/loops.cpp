@@ -50,5 +50,10 @@ int main () {
 	for (char c: str) {
 		cout << c << endl;
 	}
+
+	// break and continue:
+	// break breaks the loop
+	// continue breaks one iteration of the loop
+	// that's all of it. I won't bring examples here.
 	return 0;
 }
