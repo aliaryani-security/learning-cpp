@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int main () {
@@ -35,6 +37,18 @@ int main () {
 			cout << i * j << endl; //weird code, I know. but it shows how things work!
 		}
 	}
-	
+
+	// foreach loop:
+	// used to loop through the elements of an array
+	// (or any data structure)
+	int my_numbers[5] = {10,20,30,40,50};
+	for (int i: my_numbers) {
+		cout << i << endl;
+	}
+	// can also be used for a string:
+	string str = "Hello World";
+	for (char c: str) {
+		cout << c << endl;
+	}
 	return 0;
 }
