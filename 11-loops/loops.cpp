@@ -27,6 +27,14 @@ int main () {
 	for (int i = 0; i < 10; ++i) {
 		cout << i << endl;
 	}
+
+	// nested loops:
+	// you can create a loop inside a loop
+	for (int i = 0; i < 10; ++i) {
+		for (int j = 10; j > 0; --j) {
+			cout << i * j << endl; //weird code, I know. but it shows how things work!
+		}
+	}
 	
 	return 0;
 }
