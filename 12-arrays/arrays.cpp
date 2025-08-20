@@ -33,5 +33,18 @@ int main () {
     // add element to vector:
     names.push_back("Ronald");
 
+    // size of array
+    int my_numbers[5] {10, 20, 30, 40, 50};
+    cout << sizeof(my_numbers) << endl;
+    // it returned 20. But why ?!
+    // because sizeof() returns the size in bytes
+    // to find out how many elements an array has, 
+    // we will divide the size of array by the size of the first element :
+    cout << sizeof(my_numbers) / sizeof(my_numbers[0]) << endl;
+    // this can be used for looping :
+    for (int i = 0; i < sizeof(my_numbers)/sizeof(my_numbers[0]); i++) {
+        cout << my_numbers[i] << endl;
+    }
+
     return 0;
 }
