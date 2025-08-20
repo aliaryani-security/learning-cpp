@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main () {
@@ -11,6 +12,15 @@ int main () {
     // changing array value:
     cars[0] = "Maybach";
     cout << cars[0] << endl;
+
+    // looping in an array:
+    for (int i = 0; i < 4; i++) {
+        cout << cars[i] << endl;
+    }
+    // or we can use foreach which is designed for this purpose
+    for (string car : cars) {
+        cout << car << endl;
+    }
 
     return 0;
 }
