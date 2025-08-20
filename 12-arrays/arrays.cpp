@@ -30,6 +30,8 @@ int main () {
     // if that needs to be done, we will use vectors:
     // include <vectors> library and begin
     vector<string> names {"Liam", "John", "Alex", "Joseph"};
+    // add element to vector:
+    names.push_back("Ronald");
 
     return 0;
 }
