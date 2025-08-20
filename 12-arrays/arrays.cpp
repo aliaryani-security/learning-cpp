@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 int main () {
@@ -21,6 +22,14 @@ int main () {
     for (string car : cars) {
         cout << car << endl;
     }
+
+    // you can also remove the array size number, the compiler
+    // can determine it for you. but do not do that, okay ?!
+
+    // an array size is fixed. you cannot add or remove elements after decleration
+    // if that needs to be done, we will use vectors:
+    // include <vectors> library and begin
+    vector<string> names {"Liam", "John", "Alex", "Joseph"};
 
     return 0;
 }
