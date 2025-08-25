@@ -15,5 +15,11 @@ int main () {
     // accessing values
     cout << my_structure.my_number << endl;
     cout << my_structure.my_string << endl;
+
+    // one struct, multiple variables
+    struct {
+        int age;
+        string name;
+    } user_1, user_2, user_3;
     return 0;
 }
