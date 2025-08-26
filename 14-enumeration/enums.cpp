@@ -38,7 +38,24 @@ int main () {
         , FIVE
     };
     enum change_one item = FOUR;
-    cout << item << endl;
+    cout << item << endl; // 4
 
+    // using enum in switch
+    enum level my_level {HIGH};
+    switch (my_level) {
+        case LOW:
+            cout << "Low Level" << endl;
+            break;
+        case MEDIUM:
+            cout << "Medium Level" << endl;
+            break;
+        case HIGH:
+            cout << "High Level" << endl;
+            break;
+    }
+
+    //* final words:
+    //* use enums when you have values that will not
+    //* change, like cards, days, months, etc.
     return 0;
 }
