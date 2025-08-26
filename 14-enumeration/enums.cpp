@@ -13,5 +13,12 @@ int main () {
         , HIGH
     };
 
+    // access enum
+    // to access it, create a var from it.
+    enum level my_var = MEDIUM;
+    cout << my_var << endl; // returns 1.
+    // by default, LOW = 0, MEDIUM = 1, HIGH = 2
+
+
     return 0;
 }
