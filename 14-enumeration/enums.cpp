@@ -29,6 +29,16 @@ int main () {
     };
     enum scores my_score = FIRST;
     cout << my_score << endl;
+    // note that if you assign a value
+    // to only one of the items,
+    // the others will change accordingly
+    enum change_one {
+        THREE = 3
+        , FOUR
+        , FIVE
+    };
+    enum change_one item = FOUR;
+    cout << item << endl;
 
     return 0;
 }
