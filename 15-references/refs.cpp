@@ -17,5 +17,9 @@ int main () {
     meal = "Doner Kebab";
     cout << food << " " << meal << endl;
 
+    // the & can also be used get
+    // the memory address of a variable
+    cout << &food << endl;
+
     return 0;
 }
