@@ -51,5 +51,35 @@ Sometimes yes - and sometimes no.
     // with new, it's your job
     // to remove it using delete
     ; delete ptr
+
+    // This can also be used to create
+    // dynamic arrays, arrays that
+    // their size might change or
+    // is based on user input
+    // for this, we use new[] and delete[]
+    ; int num_guest
+    ; cout << "How many guests? "
+    ; cin >> num_guest
+    // check for invalid input:
+    ; if (num_guest <= 0) {
+        ; cout << "The number of guests must be at least 1" << endl
+        ; return 0
+        ;}
+    ; string* guests = new string[num_guest]
+    // ignore the left over new line character after reading num_guest
+    ; cin.ignore()
+
+    // enter guest names
+    ; for (int i=0; i < num_guest; i++) {
+        ; cout << "Enter name of guest " << (i + 1) << ": "
+        ; getline (cin, guests[i])
+    ;}
+    
+    // Show all guests
+    ; cout << "Guests checked in:" << endl
+    ; for (int i=0;i<num_guest;i++){
+        ; cout << guests[i] << endl
+    ; }
+    ; delete[] guests
     ; return 0
 ;}
