@@ -42,5 +42,14 @@ Sometimes yes - and sometimes no.
     This is powerful, but also risky. If you use a pointer the wrong way, you could accidentally change or damage other parts of your program's memory.
     */
 
+    // cpp new and delete
+    // new lets you manage memory yourself
+    ; int* ptr = new int
+    ; *ptr = 35
+    ; cout << *ptr << endl
+    // when you create something
+    // with new, it's your job
+    // to remove it using delete
+    ; delete ptr
     ; return 0
 ;}
