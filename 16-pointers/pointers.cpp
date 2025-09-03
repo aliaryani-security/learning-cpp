@@ -18,5 +18,12 @@ it anyways ! */
     // you can also get the value of a variable
     // using the pointer, using * (derefrence)
     ; cout << *ptr << endl
+    
+    // modify pointer value
+    // this also changes the original
+    ; *ptr = "Spaghetti"
+    ; cout << ptr << endl
+    ; cout << *ptr << endl
+    ; cout << food << endl
     ; return 0
 ; }
