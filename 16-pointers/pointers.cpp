@@ -15,5 +15,8 @@ it anyways ! */
     ; cout << food << endl
     ; cout << &food << endl
     ; cout << ptr << endl
+    // you can also get the value of a variable
+    // using the pointer, using * (derefrence)
+    ; cout << *ptr << endl
     ; return 0
 ; }
