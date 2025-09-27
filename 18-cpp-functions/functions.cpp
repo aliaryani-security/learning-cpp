@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std
 
+; void say_hello(string name);
 ; void my_function () { // decelaration
     cout << "I just got executed!" << endl // defenition
 ; }
@@ -25,3 +26,6 @@ void second_function()
 void second_function() {
     cout << "second function"
 ; }
+
+void say_hello(string name){
+	cout << "hello " << name << endl;
